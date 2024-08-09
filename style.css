@@ -12,7 +12,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    width: 200px;
+    width: 300px;
+	height: 300px;
     margin-top: 100px;
     background-color: #fff;
     padding: 20px;
@@ -20,6 +21,7 @@
     border: 1px solid #000;
     margin-left: 50px;
     flex-shrink: 0;
+    text-align: justify;
     
 }
 #item-1{
@@ -51,7 +53,20 @@
     transition: 0.5s;
 }
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 734px){
+	 .containerbox2, .containerbox3{        
+		margin: 50px 40px;
+}
+.containerbox1{
+margin: 50px 40px !important;
+}
+}
+@media only screen and (max-device-width: 1125px){
+	.containerbox3{        
+		margin: 50px 40px;
+}
+}
+@media only screen and (max-device-width: 1200px){
     
     .box{
         flex-wrap: wrap;
